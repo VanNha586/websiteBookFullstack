@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/websiteBookFullstack/static/css/main.165e4725.css",
+    "main.js": "/websiteBookFullstack/static/js/main.7730ed07.js",
+    "static/js/787.3e909e9d.chunk.js": "/websiteBookFullstack/static/js/787.3e909e9d.chunk.js",
+    "index.html": "/websiteBookFullstack/index.html",
+    "main.165e4725.css.map": "/websiteBookFullstack/static/css/main.165e4725.css.map",
+    "main.7730ed07.js.map": "/websiteBookFullstack/static/js/main.7730ed07.js.map",
+    "787.3e909e9d.chunk.js.map": "/websiteBookFullstack/static/js/787.3e909e9d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.165e4725.css",
+    "static/js/main.7730ed07.js"
+  ]
+}
