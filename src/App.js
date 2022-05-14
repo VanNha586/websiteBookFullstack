@@ -1,14 +1,16 @@
 import "./App.css";
-import { Button } from "reactstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "~/components/Layout/Header";
+import Content from "~/components/Layout/Content";
+import Footer from "~/components/Layout/Footer";
+
 function App() {
   return (
     <div className="App">
+      <Header />
       <div className="container">
-        <Button color="secondary" className="p-4">
-          Click Me
-        </Button>
+        <Content />
       </div>
+      <Footer />
     </div>
   );
 }
