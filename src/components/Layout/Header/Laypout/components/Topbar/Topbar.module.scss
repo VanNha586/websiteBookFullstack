@@ -1,0 +1,77 @@
+.wrapper {
+  border-bottom: 1px solid #dbdbdb;
+
+  .topbar {
+    // background-color: #125B50;
+    display        : flex;
+    width          : 100%;
+    justify-content: space-between;
+
+
+    .list {
+      display        : flex;
+      align-items    : center;
+      justify-content: center;
+
+      &-item {
+        list-style-type: none;
+
+        // margin-left    : 10px;
+        :hover {
+          color: red
+        }
+
+        i {
+          margin-right: 5px;
+        }
+      }
+
+      &-link {
+        text-decoration: none;
+        color          : #000;
+        font-weight    : 300;
+        padding        : 0 10px;
+      }
+
+      .list-item+.list-item {
+        border-left: 1px solid #dbdbdb;
+      }
+    }
+
+    .user-login {
+      padding        : 10px 20px;
+      display        : flex;
+      flex-direction : row;
+      align-items    : center;
+      justify-content: center;
+
+      background-color: rgba(0, 0, 0, 0.03);
+
+      .avatar {
+        border-radius: 50%;
+        width        : 50px;
+        height       : 50px;
+        margin-right : 10px;
+        cursor       : pointer;
+      }
+
+      .down {
+        position   : relative;
+        line-height: 30px;
+        font-size  : 14px;
+      }
+
+      .down::before {
+        position   : absolute;
+        content    : "\f107";
+        top        : 0;
+        right      : -15px;
+        font-size  : inherit;
+        line-height: inherit;
+        font-family: 'FontAwesome';
+      }
+    }
+  }
+
+
+}

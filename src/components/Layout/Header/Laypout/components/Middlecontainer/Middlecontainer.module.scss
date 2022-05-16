@@ -1,0 +1,48 @@
+.middlecontainer {
+  display        : flex;
+  padding        : 30px 0;
+  justify-content: space-between;
+  align-items    : center;
+
+  .logo {
+    padding: 10px 0px;
+  }
+
+  .searchbox {
+    position: relative;
+
+    .search {
+      padding      : 10px 54px 10px 20px;
+      border-radius: 5px;
+    }
+
+    span {
+      right    : 10px;
+      position : absolute;
+      top      : 50%;
+      transform: translateY(-50%);
+
+
+    }
+  }
+
+  .middle-icons {
+    display: flex;
+
+    .icon-heart,
+    .icon-cart {
+
+      padding: 0 10px;
+
+      span {
+        padding-right: 5px;
+      }
+    }
+
+
+
+    div+div {
+      border-left: 1px solid #dbdbdb;
+    }
+  }
+}
