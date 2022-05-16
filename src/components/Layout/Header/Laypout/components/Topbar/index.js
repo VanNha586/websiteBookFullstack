@@ -1,4 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState } from "react";
+
 import classNames from "classnames/bind";
 
 import styles from "./Topbar.module.scss";
@@ -6,13 +8,17 @@ import styles from "./Topbar.module.scss";
 const cx = classNames.bind(styles);
 console.log(cx);
 function Topbar() {
+  const [show, setShow] = useState(false);
+  const handleClick = () => {
+    setShow(!show);
+    // alert(show);
+  };
   return (
     <div className={cx("wrapper")}>
       <div className={cx("container", "topbar")}>
         <ul className={cx("list")}>
           <li className={cx("list-item")}>
             <a href="#" className={cx("list-link")}>
-              <FontAwesomeIcon icon="envelope" />
               <i class="fa-solid fa-envelope"></i>
               Contact
             </a>
@@ -24,9 +30,28 @@ function Topbar() {
             </a>
           </li>
           <li className={cx("list-item")}>
-            <a href="#" className={cx("list-link")}>
+            <a href="#" onClick={handleClick} className={cx("list-link")}>
               <i class="fa-solid fa-earth-europe"></i>
               Currency
+              {show && (
+                <ul className={cx("dropdown")}>
+                  <li className={cx("dropdown-item")}>
+                    <a href="#" className={cx("dropdown-link")}>
+                      £ - British Pound
+                    </a>
+                  </li>
+                  <li className={cx("dropdown-item")}>
+                    <a href="#" className={cx("dropdown-link")}>
+                      $ - Us Dollar
+                    </a>
+                  </li>
+                  <li className={cx("dropdown-item")}>
+                    <a href="#" className={cx("dropdown-link")}>
+                      € - Euro
+                    </a>
+                  </li>
+                </ul>
+              )}
             </a>
           </li>
         </ul>

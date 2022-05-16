@@ -6,7 +6,7 @@
     display        : flex;
     width          : 100%;
     justify-content: space-between;
-
+    z-index        : 3;
 
     .list {
       display        : flex;
@@ -31,47 +31,101 @@
         color          : #000;
         font-weight    : 300;
         padding        : 0 10px;
-      }
 
-      .list-item+.list-item {
-        border-left: 1px solid #dbdbdb;
+        .dropdown {
+          position : absolute;
+          top      : 100%;
+          min-width: 200px;
+
+          box-shadow      : 0 6px 12px rgb(0 0 0 / 18%);
+          background-color: #fff;
+          z-index         : 3;
+
+          &-item {
+            display: block;
+
+            :hover {
+              background-color: #dbdbdb;
+            }
+
+          }
+
+          &-link {
+            color    : #000;
+            display  : block;
+            font-size: 14px;
+            padding  : 10px 20px;
+          }
+        }
+
+
       }
     }
 
-    .user-login {
-      padding        : 10px 20px;
-      display        : flex;
-      flex-direction : row;
-      align-items    : center;
-      justify-content: center;
+    .list-item+.list-item {
+      border-left: 1px solid #dbdbdb;
+    }
 
-      background-color: rgba(0, 0, 0, 0.03);
+    .list-item:last-child {
+      position: relative;
 
-      .avatar {
-        border-radius: 50%;
-        width        : 50px;
-        height       : 50px;
-        margin-right : 10px;
-        cursor       : pointer;
-      }
+      // :hover .dropdown {
+      //   display: block;
+      // }
+    }
 
-      .down {
-        position   : relative;
-        line-height: 30px;
-        font-size  : 14px;
-      }
-
-      .down::before {
-        position   : absolute;
-        content    : "\f107";
-        top        : 0;
-        right      : -15px;
-        font-size  : inherit;
-        line-height: inherit;
-        font-family: 'FontAwesome';
-      }
+    .list-item:last-child::after {
+      content    : "\f107";
+      position   : absolute;
+      font-family: 'FontAwesome';
     }
   }
 
+  .user-login {
+    padding        : 10px 20px;
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.03);
+
+    .avatar {
+      border-radius: 50%;
+      width        : 50px;
+      height       : 50px;
+      margin-right : 10px;
+      cursor       : pointer;
+    }
+
+    .down {
+      position   : relative;
+      line-height: 30px;
+      font-size  : 14px;
+    }
+
+    .down::before {
+      position   : absolute;
+      content    : "\f107";
+      top        : 0;
+      right      : -15px;
+      font-size  : inherit;
+      line-height: inherit;
+      font-family: 'FontAwesome';
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .list {
+    &-item:not(:last-child) {
+      display: none;
+
+    }
+
+    .list-item+.list-item {
+      border-left: none !important;
+    }
+  }
 
 }

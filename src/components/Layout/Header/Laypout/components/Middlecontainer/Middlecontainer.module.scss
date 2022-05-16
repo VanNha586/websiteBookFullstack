@@ -3,13 +3,16 @@
   padding        : 30px 0;
   justify-content: space-between;
   align-items    : center;
+  flex-wrap      : wrap;
+  z-index        : 2;
 
   .logo {
     padding: 10px 0px;
   }
 
   .searchbox {
-    position: relative;
+    position   : relative;
+    // padding : 0 270px;
 
     .search {
       padding      : 10px 54px 10px 20px;
@@ -31,8 +34,8 @@
 
     .icon-heart,
     .icon-cart {
-
-      padding: 0 10px;
+      font-weight: 500;
+      padding    : 0 10px;
 
       span {
         padding-right: 5px;
@@ -43,6 +46,18 @@
 
     div+div {
       border-left: 1px solid #dbdbdb;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .searchbox {
+    order: 1;
+    width: 100%;
+
+    .search {
+      display: block;
+      width  : 100%;
     }
   }
 }
