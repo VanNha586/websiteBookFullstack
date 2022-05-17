@@ -1,3 +1,41 @@
-.nav {
-  background-color: #FF6363;
+.wrapper_nav {
+  background-color: #77b748;
+
+  .nav {
+    display              : flex;
+    height               : 56px;
+    // justify-content: center;
+    // gap               : 12px;
+    align-items          : center;
+
+    &-item {
+      padding : 0 25px;
+      position: relative;
+
+
+
+    }
+
+    &-link {
+      color      : #fff;
+      font-weight: 500;
+      font-size  : 14px;
+
+      i {
+        position   : absolute;
+        top        : 50%;
+        transform  : translateY(-50%);
+        margin-left: 5px;
+      }
+
+      :last-child {
+        font-size: 20px;
+      }
+
+
+      :last-child::after {}
+
+    }
+
+  }
 }
