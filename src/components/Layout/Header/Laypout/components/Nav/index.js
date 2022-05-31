@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 import classNames from "classnames/bind";
 
 import styles from "./Nav.module.scss";
@@ -5,26 +7,35 @@ import styles from "./Nav.module.scss";
 const cx = classNames.bind(styles);
 
 function Nav() {
+  const [show, setShow] = useState(false);
+  const handleShow = () => {
+    setShow(!show);
+  };
   return (
     <div className={cx("wrapper_nav")}>
       <div className={cx("container")}>
         <ul className={cx("nav")}>
           <li className={cx("nav-item")}>
             <a href="#" className={cx("nav-link")}>
-              All Categories
-              <i class="fa-solid fa-angle-down"></i>
-            </a>
-          </li>
-          <li className={cx("nav-item")}>
-            <a href="#" className={cx("nav-link")}>
               Home
-              <i class="fa-solid fa-angle-down"></i>
             </a>
           </li>
           <li className={cx("nav-item")}>
             <a href="#" className={cx("nav-link")}>
               Authors
-              <i class="fa-solid fa-angle-down"></i>
+              <i className={cx("fa-solid", "fa-angle-down", "icon-down")}></i>
+              <ul className={cx("authors")}>
+                <li className={cx("authors-item")}>
+                  <a className={cx("authors-link")} href="#">
+                    Authors
+                  </a>
+                </li>
+                <li className={cx("authors-item")}>
+                  <a className={cx("authors-link")} href="#">
+                    Authors details
+                  </a>
+                </li>
+              </ul>
             </a>
           </li>
           <li className={cx("nav-item")}>
@@ -40,7 +51,7 @@ function Nav() {
           <li className={cx("nav-item")}>
             <a href="#" className={cx("nav-link")}>
               Latest News
-              <i class="fa-solid fa-angle-down"></i>
+              <i className={cx("fa-solid", "fa-angle-down", "icon-down")}></i>
             </a>
           </li>
           <li className={cx("nav-item")}>
@@ -50,7 +61,12 @@ function Nav() {
           </li>
           <li className={cx("nav-item")}>
             <a href="#" className={cx("nav-link")}>
-              <i class="fa-solid fa-bars-staggered"></i>
+              Product
+            </a>
+          </li>
+          <li onClick={handleShow} className={cx("nav-item")}>
+            <a href="#" className={cx("nav-link")}>
+              <i className={cx("fa-solid ", "fa-bars-staggered", "icon-bar")}></i>
             </a>
           </li>
         </ul>

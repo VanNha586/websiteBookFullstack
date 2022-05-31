@@ -13,7 +13,6 @@ function Header() {
       <Topbar />
       <Middlecontainer />
       <Nav />
-      Header
     </div>
   );
 }

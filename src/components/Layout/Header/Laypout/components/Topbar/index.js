@@ -19,19 +19,19 @@ function Topbar() {
         <ul className={cx("list")}>
           <li className={cx("list-item")}>
             <a href="#" className={cx("list-link")}>
-              <i class="fa-solid fa-envelope"></i>
+              <i className="fa-solid fa-envelope"></i>
               Contact
             </a>
           </li>
           <li className={cx("list-item")}>
             <a href="#" className={cx("list-link")}>
-              <i class="fa-solid fa-circle-question"></i>
+              <i className="fa-solid fa-circle-question"></i>
               Help
             </a>
           </li>
           <li className={cx("list-item")}>
             <a href="#" onClick={handleClick} className={cx("list-link")}>
-              <i class="fa-solid fa-earth-europe"></i>
+              <i className="fa-solid fa-earth-europe"></i>
               Currency
               {show && (
                 <ul className={cx("dropdown")}>

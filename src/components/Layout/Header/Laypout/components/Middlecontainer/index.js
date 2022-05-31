@@ -13,19 +13,19 @@ function Middlecontainer() {
       <div className={cx("searchbox")}>
         <input className={cx("search")} type="text" placeholder="Search" />
         <span>
-          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <i className="fa-solid fa-magnifying-glass search-icon"></i>
         </span>
       </div>
       <div className={cx("middle-icons")}>
         <div className={cx("icon-heart")}>
           <span>
-            <i class="far fa-heart"></i>
+            <i className="far fa-heart"></i>
           </span>
           Wishlist
         </div>
         <div className={cx("icon-cart")}>
           <span>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i className="fa-solid fa-cart-shopping"></i>
           </span>
           $123.00
         </div>

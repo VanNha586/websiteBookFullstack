@@ -1,3 +1,210 @@
-.footer {
-  background-color: #ccc;
+.tg {
+  &-footer {
+    background: #f7f7f7;
+    border-top: 2px solid;
+
+    .tg-footerarea {
+
+      .tg-clientservices {
+        width          : 100%;
+        color          : #666;
+        padding        : 60px 0;
+        list-style     : none;
+        font-size      : 16px;
+        line-height    : 19px;
+        text-align     : center;
+        border-bottom  : 1px solid #dbdbdb;
+        display        : flex;
+        justify-content: space-between;
+        align-items    : flex-start;
+
+        li {
+          display        : flex;
+          justify-content: center;
+          align-items    : center;
+          gap            : 20px;
+          padding        : 0 15px;
+
+          .tg-titlesubtitle {
+            text-align: left;
+
+            h3 {
+              color: #000;
+            }
+
+            p {
+              margin     : 0;
+              line-height: 19px;
+            }
+          }
+
+        }
+      }
+
+      .tg-clientserviceicon {
+        width      : 50px;
+        font-size  : 30px;
+        line-height: 50px;
+
+        i.rocket {
+          color: #93648d;
+        }
+
+        .tag {
+          color: #4cc3d9;
+        }
+
+        .leaf {
+          color: #7bc8a4;
+        }
+
+        .heart {
+          color: #f16745;
+        }
+      }
+
+
+      .tg-threecolumns {
+        display: flex;
+        padding: 60px 0;
+
+        .tg-footercol {
+          min-height: 350px;
+
+          .tg-logo {
+            display       : flex;
+            flex-direction: column;
+            margin-bottom : 30px;
+          }
+
+          .tg-contactinfo {}
+
+          .tg-socialicons {
+            overflow   : hidden;
+            list-style : none;
+            text-align : center;
+            line-height: 30px;
+            display    : flex;
+            gap        : 20px;
+          }
+        }
+
+        .tg-widgetnavigation {
+
+          // display: flex;
+          .tg-widgettitle {
+            margin       : 0 0 15px;
+            color        : #000;
+            padding      : 0 20px;
+            border-radius: 5px;
+            border-bottom: 1px solid #dbdbdb;
+
+            h3 {
+              color      : #404040;
+              font-size  : 16px;
+              padding    : 0 0 20px;
+              line-height: normal;
+            }
+          }
+
+          .tg-widgetcontent {
+            display: flex;
+            gap    : 20px;
+
+            ul {
+              li {
+                padding   : 11px 0 11px 15px;
+                list-style: inherit;
+              }
+            }
+          }
+
+        }
+
+        .tg-widgettopsellingauthors {
+          .tg-widgettitle {
+            margin: 0 0 15px;
+            color : #000;
+
+            padding      : 0 20px;
+            border-radius: 5px;
+            border-bottom: 1px solid #dbdbdb;
+
+            h3 {
+              color      : #404040;
+              font-size  : 16px;
+              padding    : 0 0 20px;
+              line-height: normal;
+              font-weight: 500;
+
+            }
+
+            .tg-widgetcontent {
+              ul {
+
+                font-size  : 13px;
+                line-height: 17px;
+                list-style : none;
+
+                li {
+                  padding        : 10px 0;
+                  padding        : 11px 0;
+                  position       : relative;
+                  line-height    : inherit;
+                  list-style-type: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  &-discount {}
+
+  &-quality {}
+
+  &-support {}
+
+  &-threecolumns {}
+
+  &-footercol {}
+
+  &-logo {}
+
+  &-contactinfo {}
+
+  &-socialicons {}
+
+  &-facebook {}
+
+  &-twitter {}
+
+  &-linkedin {}
+
+  &-googleplus {}
+
+  &-rss {}
+
+  &-widget {}
+
+  &-widgetnavigation {}
+
+  &-widgettitle {}
+
+  &-widgetcontent {}
+
+  &-widgettopsellingauthors {}
+
+  &-authornamebooks {}
 }
