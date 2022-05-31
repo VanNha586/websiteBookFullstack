@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/websiteBookFullstack/static/css/main.55d86de0.css",
-    "main.js": "/websiteBookFullstack/static/js/main.7c048044.js",
+    "main.css": "/websiteBookFullstack/static/css/main.e9a70b88.css",
+    "main.js": "/websiteBookFullstack/static/js/main.551ab1d1.js",
     "static/js/787.3e909e9d.chunk.js": "/websiteBookFullstack/static/js/787.3e909e9d.chunk.js",
+    "static/media/bgparallax-07.jpg": "/websiteBookFullstack/static/media/bgparallax-07.a4f7886580d804f72174.jpg",
+    "static/media/bgparallax-04.jpg": "/websiteBookFullstack/static/media/bgparallax-04.b64d12d59c939b6d7068.jpg",
+    "static/media/img-07.jpg": "/websiteBookFullstack/static/media/img-07.f684daee70abad8bf5dd.jpg",
+    "static/media/img-09.jpg": "/websiteBookFullstack/static/media/img-09.2f5edb914bf5b6bb5db1.jpg",
+    "static/media/img-08.jpg": "/websiteBookFullstack/static/media/img-08.e2fd934002735942c113.jpg",
+    "static/media/img-01.jpg": "/websiteBookFullstack/static/media/img-01.73e4b4503822756c50a8.jpg",
+    "static/media/img-04.png": "/websiteBookFullstack/static/media/img-04.af0a9ca5e63fafd41093.png",
     "index.html": "/websiteBookFullstack/index.html",
-    "main.55d86de0.css.map": "/websiteBookFullstack/static/css/main.55d86de0.css.map",
-    "main.7c048044.js.map": "/websiteBookFullstack/static/js/main.7c048044.js.map",
+    "main.e9a70b88.css.map": "/websiteBookFullstack/static/css/main.e9a70b88.css.map",
+    "main.551ab1d1.js.map": "/websiteBookFullstack/static/js/main.551ab1d1.js.map",
     "787.3e909e9d.chunk.js.map": "/websiteBookFullstack/static/js/787.3e909e9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55d86de0.css",
-    "static/js/main.7c048044.js"
+    "static/css/main.e9a70b88.css",
+    "static/js/main.551ab1d1.js"
   ]
 }
